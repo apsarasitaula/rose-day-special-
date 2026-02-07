@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Celebrate Rose Day with a beautiful interactive experience. Send virtual roses, create personalized messages, and spread the love!">
+    <title>&#127801; Rose Day Special - February 7th</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor">🌹</div>
+
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petals-container"></div>
+
+    <!-- Ambient Glow -->
+    <div class="ambient-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="rose-icon">&#127801;</span>
+            <span class="brand-text">For My Bhushan Babe 💕</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#garden" class="nav-link">Rose Garden</a>
+            <a href="#message" class="nav-link">Send Love</a>
+            <a href="#meanings" class="nav-link">Rose Meanings</a>
+
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-date">February 7th, 2026</p>
+            <h1 class="hero-title">
+                <span class="title-line">Happy Rose Day</span>
+                <span class="title-line accent">My Bhushan Babe 🌹</span>
+            </h1>
+            <p class="hero-subtitle">You're my forever Valentine, my best friend, my everything 💕<br>✨ Every rose here whispers "I love you" ✨</p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="scrollToSection('garden')">
+                    <span>Explore our love garden</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('message')">
+                    <span>Send you Rose</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-rose-container">
+            <div class="hero-rose-gif" id="hero-rose">
+                <img src="flower.gif" alt="Cute cat with rose - Love You!" class="rose-gif-image">
+                <div class="gif-glow"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore our love story, babe 💖</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Rose Garden -->
+    <section id="garden" class="garden-section">
+        <div class="section-header">
+            <h2 class="section-title">Interactive Rose Garden</h2>
+            <p class="section-subtitle">Click each rose babe - they have special messages just for you! 💕</p>
+        </div>
+        <div class="garden-grid">
+            <div class="rose-card" data-color="red" data-meaning="Deep Love & Passion">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-red">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Red Rose</h3>
+                    <p class="rose-meaning">Babe, this is my passionate love for you - deep, forever, and growing stronger every day 💋</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="pink" data-meaning="Grace & Gratitude">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-pink">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Pink Rose</h3>
+                    <p class="rose-meaning">Thank you for being my everything, babe. I'm so grateful the universe gave me YOU 🥰</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="white" data-meaning="Purity & Innocence">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-white">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>White Rose</h3>
+                    <p class="rose-meaning">Our love is pure, innocent, and perfect. You and me forever, babe 💍</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="yellow" data-meaning="Friendship & Joy">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-yellow">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Yellow Rose</h3>
+                    <p class="rose-meaning">You're not just my lover, babe - you're my best friend, my joy, my sunshine ☀️</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="lavender" data-meaning="Enchantment & Mystery">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-lavender">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Lavender Rose</h3>
+                    <p class="rose-meaning">I was enchanted from the first moment I saw you, babe. You're my magic ✨</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+            <div class="rose-card" data-color="orange" data-meaning="Desire & Enthusiasm">
+                <div class="rose-wrapper">
+                    <div class="interactive-rose"><span class="colored-rose rose-orange">&#127801;</span></div>
+                </div>
+                <div class="rose-info">
+                    <h3>Orange Rose</h3>
+                    <p class="rose-meaning">>Every day with you is an adventure, babe! Can't wait for our forever 🎢💕</p>
+                </div>
+                <div class="rose-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Send Love Message Section -->
+    <section id="message" class="message-section">
+        <div class="message-container">
+            <div class="message-left">
+                <h2 class="section-title">Love Letter For My Bhushan 💌</h2>
+                <p class="section-subtitle">Create a sweet message for you, babe!</p>
+
+                <form class="rose-form" id="rose-form">
+                    <div class="form-group">
+                        <label for="recipient-name">To My Love 💖</label>
+                        <input type="text" id="recipient-name" placeholder="Enter their name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sender-name">From your Love 💖</label>
+                        <input type="text" id="sender-name" placeholder="Enter your name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Choose your Rose</label>
+                        <div class="rose-selector">
+                            <button type="button" class="rose-option selected" data-rose="red"><span
+                                    class="colored-rose rose-red">&#127801;</span></button>
+                            <button type="button" class="rose-option" data-rose="pink"><span
+                                    class="colored-rose rose-pink">&#127801;</span></button>
+                            <button type="button" class="rose-option" data-rose="white"><span
+                                    class="colored-rose rose-white">&#127801;</span></button>
+                            <button type="button" class="rose-option" data-rose="yellow"><span
+                                    class="colored-rose rose-yellow">&#127801;</span></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="love-message">Your Sweet Message For Bhushan Babe 💝</label>
+                        <textarea id="love-message" placeholder="Write something adorable for your Bhushan babe... 🥰" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Create My Love Card 💕</span>
+                        <span class="btn-sparkle">✨</span>
+                    </button>
+                </form>
+            </div>
+            <div class="message-right">
+                <div class="preview-card" id="preview-card">
+                    <div class="preview-header">
+                        <span class="preview-badge">Preview</span>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-rose" id="preview-rose"><span class="colored-rose rose-red">&#127801;</span>
+                        </div>
+                      <h3 class="preview-recipient">To My <span id="preview-name">Bhushan Babe</span> 💕</h3>
+                        <p class="preview-message" id="preview-message">Your sweet message will appear here, babe... 🥰</p>
+                        <div class="preview-footer">
+                            <span>With all my love forever,</span>
+                            <span class="preview-sender" id="preview-sender">Your Babe</span>
+                        </div>
+                    </div>
+                    <div class="preview-decoration">
+                        <div class="corner-rose top-left">🌹</div>
+                        <div class="corner-rose top-right">💕</div>
+                        <div class="corner-rose bottom-left">💕</div>
+                        <div class="corner-rose bottom-right">🌹</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Meanings Section -->
+    <!-- Rose Meanings Section -->
+    <section id="meanings" class="meanings-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Love Story In Roses 🌹💕</h2>
+            <p class="section-subtitle">Every color tells how much I love you, babe</p>
+        </div>
+        <div class="meanings-timeline">
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon red"><span class="colored-rose rose-red">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Red Rose - My Passionate Love</h3>
+                    <p>Babe, this red rose is my heart beating just for you. Every beat says "I love you Bhushan" - passionate, deep, and forever. You're my one and only 💋❤️</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon pink"><span class="colored-rose rose-pink">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Pink Rose - So Grateful For You</h3>
+                    <p>I'm so thankful for you, babe. You're my blessing, my miracle, my answered prayer. Thank you for loving me back 🥰💕</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon white"><span class="colored-rose rose-white">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>White Rose - Our Pure Forever</h3>
+                    <p>Our love is pure magic, babe. No drama, no games - just you, me, and forever. Can't wait to marry you someday 💍✨</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon yellow"><span class="colored-rose rose-yellow">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Yellow Rose - You're My Happiness</h3>
+                    <p>You make me smile like crazy, babe! You're my sunshine, my laughter, my happy place. Life is so much better with you ☀️😊</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon lavender"><span class="colored-rose rose-lavender">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Lavender Rose - Love At First Sight</h3>
+                    <p>Remember when we first met, babe? I knew right then you were special. You enchanted me completely 💫💜</p>
+                </div>
+            </div>
+            <div class="meaning-item" data-aos="fade-up">
+                <div class="meaning-icon orange"><span class="colored-rose rose-orange">🌹</span></div>
+                <div class="meaning-content">
+                    <h3>Orange Rose - Excited For Us</h3>
+                    <p>I'm so excited for every adventure with you, babe! Our future together is going to be AMAZING 🎉🧡</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Interactive Bouquet Builder -->
+    <section id="bouquet" class="bouquet-section">
+        <div class="section-header">
+            <h2 class="section-title">Build Your Bouquet</h2>
+            <p class="section-subtitle">Create a virtual arrangement to express your feelings</p>
+        </div>
+        <div class="bouquet-builder">
+            <div class="bouquet-display">
+                <div class="bouquet-container-inner">
+                    <!-- Paper Wrapper (Back Layer) -->
+
+
+                    <!-- Roses Container -->
+                    <div class="bouquet-roses" id="bouquet-roses">
+                        <p class="bouquet-hint">Add roses to build your bouquet...</p>
+                    </div>
+
+                    <!-- Leaves Decoration -->
+                    <div class="bouquet-leaves-decoration"></div>
+
+                    <!-- Paper Wrapper (Front/Fold Layer) -->
+                    <div class="bouquet-paper-front"></div>
+
+                    <!-- Ribbon -->
+                    <div class="bouquet-ribbon">
+                        <div class="ribbon-knot"></div>
+                        <div class="ribbon-tail left"></div>
+                        <div class="ribbon-tail right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bouquet-controls">
+                <div class="bouquet-options">
+                    <button class="bouquet-rose-btn" data-rose="red" title="Add Red Rose">
+                        <span class="colored-rose rose-red">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="pink" title="Add Pink Rose">
+                        <span class="colored-rose rose-pink">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="white" title="Add White Rose">
+                        <span class="colored-rose rose-white">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="yellow" title="Add Yellow Rose">
+                        <span class="colored-rose rose-yellow">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="lavender" title="Add Lavender Rose">
+                        <span class="colored-rose rose-lavender">🌹</span>
+                    </button>
+                    <button class="bouquet-rose-btn" data-rose="orange" title="Add Orange Rose">
+                        <span class="colored-rose rose-orange">🌹</span>
+                    </button>
+                </div>
+                <div class="bouquet-actions" style="margin-top: 1.5rem; text-align: center;">
+                    <button class="btn btn-secondary" id="clear-bouquet">
+                        <span>Clear Vase</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+  <section id="surprise" class="surprise-section">
+        <div class="surprise-container">
+            <h2 class="section-title">A Special Surprise For You, Babe! 🎁</h2>
+            <p class="section-subtitle">Click the gift to reveal your surprise 💕</p>
+            
+            <div class="gift-box" id="gift-box">
+                <div class="gift-lid">🎀</div>
+                <div class="gift-base">🎁</div>
+                <div class="gift-shine"></div>
+            </div>
+            
+            <div class="surprise-message hidden" id="surprise-message">
+                <div class="surprise-content">
+                    <h3>💕 To My Dearest Bhushan Babe 💕</h3>
+                    <p class="love-paragraph">
+                        Every single day with you feels like a dream come true. You're not just my Valentine, babe - 
+                        you're my best friend, my soulmate, my forever person. I love your smile, your laugh, 
+                        the way you make me feel so special. 
+                    </p>
+                    <p class="love-paragraph">
+                        This Rose Day, I want you to know that my love for you grows stronger every single day. 
+                        Thank you for being YOU - kind, sweet, amazing, and absolutely perfect in every way! 🥰
+                    </p>
+                    <p class="love-paragraph">
+                        I can't wait to make a million more memories with you, babe. Here's to forever together! 💍
+                    </p>
+                    <div class="signature">
+                        All my love forever,<br>
+                        <span class="signature-name">Your Babe 💕</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="countdown-container">
+            <h2 class="countdown-title">Rose Day is Coming!</h2>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-message">Prepare your roses and spread the love! &#127801;</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-rose">🌹💕🌹</div>
+            <p class="footer-text">Made with endless love for my Bhushan Babe</p>
+            <p class="footer-quote">"You're my rose among thorns, my light in the darkness, my everything 💕"</p>
+            <p class="footer-dedication">Forever Yours, Babe ❤️</p>
+            <p class="footer-small">Rose Day 2026 | You + Me = Forever 💍</p>
+        </div>
+        <div class="footer-petals"></div>
+    </footer>
+
+    <!-- Rose Card Modal -->
+    <div class="modal" id="rose-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="rose-card-final" id="final-card">
+                <!-- Generated card will appear here -->
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="download-card">
+                    <span>Save This Card 💾</span>
+                </button>
+                <button class="btn btn-secondary" id="share-card">
+                    <span>Share With Bhushan 💕</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
